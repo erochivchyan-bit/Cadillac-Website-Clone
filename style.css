@@ -907,6 +907,24 @@
 }
 
 
+.a-link-recalls {
+	color: black;
+	text-decoration: underline;
+	transition: 0.2s all ease;
+}
+
+
+.a-link-recalls:hover {
+	color: rgb(155, 155, 0);
+	text-decoration: underline;
+}
+
+
+.hamar1 {
+	color: black;
+	text-decoration: underline;
+}
+
 
 
 
@@ -1101,10 +1119,9 @@
 	display: flex;
 	width: 15%;
 	height: 5%;
-	border: 1px solid;
+	border: 0px solid;
 	margin-top: 50px;
 	align-items: center;
-	justify-content: center;
 }
 
 
@@ -1131,16 +1148,15 @@
 	display: flex;
 	width: 30%;
 	height: 50%;
-	border: 1px solid;
+	border: 0px solid;
 	align-items: center;
-	gap: 20px;
+	gap: 15px;
 }
 
 
 
 .font-sockayqer {
 	font-size: 25px;
-	margin-left: 10px;
 	transition: 0.3s all ease;
 	cursor: pointer;
 	display: inline-block;
