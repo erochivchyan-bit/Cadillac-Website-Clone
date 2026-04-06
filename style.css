@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 .menu-Div {
 	display: flex;
 	width: 100%;
@@ -951,7 +958,7 @@
 	background: none;
 	margin-top: -110px;
 	font-size: 15px;
-	font-family: "inter", sans-serif;
+	font-family: "Inter", sans-serif;
   	font-weight: 400;
   	letter-spacing: 2px;
   	transition: all 0.5s ease;
@@ -989,7 +996,7 @@
 
 
 .searchdiv-p1 {
-	font-family: "inter", sans-serif;
+	font-family: "Inter", sans-serif;
   	font-weight: 400;
   	letter-spacing: 2px;
   	margin: 0;
@@ -1055,7 +1062,7 @@
 .a-list1 {
 	text-decoration: none;
 	color: #363636;
-	font-family: "inter", sans-serif;
+	font-family: "Inter", sans-serif;
 	font-weight: 400;
 	letter-spacing: 1px;
 	display: inline-block;
@@ -1103,7 +1110,7 @@
 
 
 .p-followus {
-	font-family: "inter", sans-serif;
+	font-family: "Inter", sans-serif;
 	font-weight: 400;
 	margin: 0;
 	font-size: 13px;
