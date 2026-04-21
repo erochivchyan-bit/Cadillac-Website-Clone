@@ -2,6 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+a:focus {
+  outline: none;
 }
 
 
@@ -20,7 +26,7 @@
 .menu-Div1-1{
 	display: flex;
 	width: 33%;
-	height: 50px;
+	height: 100%;
 	border: 0px solid;
 	align-items: center;
 	justify-content: flex-start;
@@ -57,7 +63,7 @@
 	background: rgba(0,0,0,0.5);
  	opacity: 0;
  	visibility: hidden;
-  	transition: 0.3s;
+  	transition: 0.4s;
   	z-index: 1000;
 }
 
@@ -71,7 +77,7 @@
   	height: 100%;
   	background: white;
   	padding: 20px;
-  	transition: 0.3s;
+  	transition: 0.4s;
  	z-index: 1002;
  	overflow-y: auto;
 }
@@ -118,7 +124,7 @@
   	letter-spacing: 0.5px;
   	color: #333333;
   	text-decoration: none;
-  	transition: 0.3s ease;
+  	transition: 0.3s ease-in-out;
 }
 
 
@@ -136,12 +142,12 @@
   	left: 0;
   	bottom: 0px;
   	width: 0;
-  	height: 1px;
+  	height: 2px;
   	background: black;
-  	transition: 0.4s ease;
+  	transition: 0.4s ease-in-out;
 }
 
-/* hover */
+
 .side-menu1-a1:hover::after {
   	width: 100%;
 }
@@ -180,7 +186,7 @@
   	letter-spacing: 0.5px;
   	color: #333333;
   	text-decoration: none;
-  	transition: 0.3s ease;
+  	transition: 0.3s ease-in-out;
 }
 
 
@@ -198,12 +204,12 @@
   	left: 0;
   	bottom: 0px;
   	width: 0;
-  	height: 1px;
+  	height: 2px;
   	background: black;
-  	transition: 0.4s ease;
+  	transition: 0.4s ease-in-out;
 }
 
-/* hover */
+
 .side-menu1-a2:hover::after {
   	width: 100%;
 }
@@ -212,7 +218,6 @@
 
 
 #checkbox1:checked ~ .side-menu1 {
-
   	left: 0;
 }
 
@@ -253,12 +258,12 @@
   	left: 0;
   	bottom: 0px;
   	width: 0;
-  	height: 1px;
+  	height: 2px;
   	background: black;
-  	transition: 0.4s ease;
+  	transition: 0.4s ease-in-out;
 }
 
-/* hover */
+
 .menu-Li:hover::after {
   	width: 100%;
 }
@@ -268,20 +273,28 @@
 .menu-Div1-2{
 	display: flex;
 	width: 33%;
-	height: 50px;
+	height: 100%;
 	border: 0px solid;
-	align-items: center;
+}
+
+
+.div-cadillac-logo {
+	display: flex;
 	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 60%;
+	border: 0px solid;
 }
 
 
 .menu-Nkar2 {
-	width: 90px;
-	height: 40px;
+	width: 92px;
+	height: 35px;
 	border: 0px solid;
 	opacity: 0;
 	transform: translateY(20px);
-	animation: show 0.8s ease forwards;
+	animation: show 0.7s linear forwards;
 }
 
 
@@ -295,10 +308,79 @@
 
 
 
+
+
+
+
+
+/* tarber ekranneri i hmar VEHICLES, SHOP////////////////////////////////////////////// */
+
+
+.media-div-menu-Ul {
+	display: flex;
+	width: 100%;
+	height: 40%;
+	border: 0px solid;
+	align-items: center;
+}
+
+
+.media-menu-Ul {
+	display: flex;
+ 	font-size: 14px;
+  	margin: 0;
+  	padding: 0;
+	margin-left: 60px;
+  	gap: 100px;
+	letter-spacing: 1px;
+	font-family: "Syncopate", sans-serif;
+  	font-weight: 400;
+  	font-style: normal;
+}
+
+
+.media-menu-Li {
+	position: relative;
+	list-style: none;
+	cursor: pointer;
+}
+
+
+/* media underline */
+.media-menu-Li::after {
+  	content: "";
+  	position: absolute;
+  	left: 0;
+  	bottom: 0px;
+  	width: 0;
+  	height: 2px;
+  	background: black;
+  	transition: 0.4s ease-in-out;
+}
+
+/* media hover */
+.media-menu-Li:hover::after {
+  	width: 100%;
+}
+/* ////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .menu-Div1-3{
 	display: flex;
 	width: 33%;
-	height: 50px;
+	height: 100%;
 	border: 0px solid;
 	align-items: center;
 	justify-content: flex-end;
@@ -306,8 +388,9 @@
 
 
 .menu-Nkar3 {
-	width: 90px;
+	width: 43px;
 	height: 30px;
+	margin-right: 32px;
 }
 
 
@@ -351,7 +434,7 @@
 	letter-spacing: 2px;
 	font-weight: 550;
 	margin-bottom: 40px;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
 }
 
 
@@ -370,7 +453,6 @@
 .div3 {
 	position: relative;
 	display: flex;
-	flex-wrap: wrap;
 	width: 100%;
 	height: 440px;
 	border: 0px solid;
@@ -392,75 +474,95 @@
 
 
 
+.aaa {
+	display: flex;
+	width: 33.3%;
+	height: 440px;
+	border: 0px solid;
+	background: black;
+}
+
+
+.aaa:hover {
+	text-decoration: none;
+}
+
+
+
 
 .div3-div1 {
 	position: relative;
 	display: flex;
-	flex: 1;
-	height: 440px;
-	border: 2px solid black;
-	background: url(https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/mastheads/2026/08-images/25-cadillac-homepage-default-request-dealer-pricing-promotile.jpg?imwidth=1920);
-	background-size: 100% 100%;
- 	z-index: 3;
-  	justify-content: center;
-	transition: all 0.3s ease;
+	width: 100%;
+	height: 100%;
+	border-right: 4px solid #0D0D0D;
+	justify-content: center;
+	overflow: hidden;
 }
 
 
-.div3-div1:hover {
-	cursor: pointer;
-	border: 2px solid white;
-	transform: scale(1.02);
-}
-
-
-.div345-p-1 {
+.div3-div1::before {
+	content: "";
 	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url(https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/mastheads/2026/08-images/25-cadillac-homepage-default-request-dealer-pricing-promotile.jpg?imwidth=1920);
+	background-size: cover;
+	background-position: center;
+	transition: 0.3s ease-in-out;
+	z-index: 1;
+}
+
+
+.div3-div1:hover::before {
+	transform: scale(1.08);
+}
+
+
+.div3-div123-p1 {
+	position: relative;
+	z-index: 2;
 	color: white;
-	font-size: 25px;
-	margin-top: 30px;
+	font-size: 28px;
+	margin-top: 40px;
 	font-family: "Syncopate", sans-serif;
   	font-weight: 400;
   	font-style: normal;
     letter-spacing: 7px;
     line-height: 1.1;
+	text-align: center;
 }
 
-
-.div345-p-2 {
-	position: absolute;
-	color: white;
-	letter-spacing: 6px;
-	margin-top: 60px;
-	font-size: 25px;
-	font-family: "Syncopate", sans-serif;
-  	font-weight: 400;
-  	font-style: normal;
-  	letter-spacing: 7px;
-}
-
+	
 
 
 
 .div3-div2 {
 	position: relative;
 	display: flex;
-	flex: 1;
-	height: 440px;
-	border: 2px solid black;
+	width: 100%;
+	height: 100%;
+	border-right: 4px solid #0D0D0D;
 	justify-content: center;
-	background: url(https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/mastheads/2026/08-images/25-cadillac-homepage-default-search-inventory-promotile.jpg?imwidth=1200);
-	background-size: 100% 100%;
-  	z-index: 1;
-	transition: all 0.3s ease;
+	overflow: hidden;
 }
 
 
-.div3-div2:hover {
-	cursor: pointer;
-	border: 2px solid white;
-	transform: scale(1.02);
-	z-index: 3;
+.div3-div2::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url(https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/mastheads/2026/08-images/25-cadillac-homepage-default-search-inventory-promotile.jpg?imwidth=1920);
+	background-size: cover;
+	background-position: center;
+	transition: 0.3s ease-in-out;
+	z-index: 1;
+}
+
+
+.div3-div2:hover::before {
+	transform: scale(1.08);
 }
 
 
@@ -469,21 +571,27 @@
 .div3-div3 {
 	position: relative;
 	display: flex;
-	justify-content: center;
-	flex: 1;
+	width: 100%;
 	height: 100%;
-	border: 2px solid black;
-	background: url(https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/mastheads/2026/08-images/25-cadillac-homepage-default-lyriq-v-promotile-v2.jpg?imwidth=1920);
-	background-size: 100% 100%;
- 	z-index: 1;
-	transition: all 0.3s ease;
+	border: 0px solid;
+	justify-content: center;
+	overflow: hidden;
 }
 
+.div3-div3::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url(https://www.cadillac.com/content/dam/cadillac/na/us/english/index/home-page-refresh/mastheads/2026/08-images/25-cadillac-homepage-default-lyriq-v-promotile-v2.jpg?imwidth=1920);
+	background-size: cover;
+	background-position: center;
+	transition: 0.3s ease-in-out;
+	z-index: 1;
+}
 
-.div3-div3:hover {
-	cursor: pointer;
-	border: 2px solid white;
-	transform: scale(1.02);
+.div3-div3:hover::before {
+	transform: scale(1.08);
 }
 
 
@@ -495,7 +603,7 @@
 
 .div4 {
 	width: 100%;
-	height: 800px;
+	height: 780px;
 	border: 1px solid black;
 	background: #0D0D0D;
 }
@@ -544,7 +652,7 @@
 	font-size: 16px;
     font-weight: bold;
     margin: 0;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease-in-out;
 }
 
 
@@ -579,7 +687,7 @@
 	width: 55%;
 	height: 600px;
 	border: 1px solid white;
-	margin-top: 50px;
+	margin-top: 35px;
 	background: #0C0C0C;
 	flex-direction: column;
 }
@@ -589,6 +697,7 @@
 
 .divoptiq1-div1 {
 	display: flex;
+	flex-wrap: wrap;
 	width: 100%;
 	height: 230px;
 	border: 0px solid white;
@@ -599,7 +708,7 @@
 
 .divoptiq1-div1-p1 {
 	color: white;
-	font-family: "Syncopate", sans-serif;
+	font-family: "Inter", sans-serif;
   	font-weight: 400;
   	font-style: normal;
   	margin-top: 40px;
@@ -618,19 +727,10 @@
 .divoptiq1-div1-p3 {
 	color: white;
   	font-size: 16px;
+	text-align: center;
+	max-width: 87%;
 }
 
-
-.divoptiq1-div1-p4 {
-	color: white;
-  	font-size: 16px;
-}
-
-
-.divoptiq1-div1-p5 {
-	color: white;
-  	font-size: 16px;
-}
 
 
 
@@ -647,7 +747,7 @@
 	display: flex;
 	width: 50%;
 	height: 80px;
-	border-right: 0px solid white;
+	border-right: 1px solid white;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -708,12 +808,8 @@
 	color: white;
   	font-size: 13px;
   	margin-top: 10px;
-}
-
-
-.divoptiq1-div3-p3 {
-	color: white;
-  	font-size: 13px;
+	text-align: center;
+	max-width: 87%;
 }
 
 
@@ -729,7 +825,7 @@
   	font-size: 15px;
   	letter-spacing: 2px;
   	margin-top: 10px;
-    transition: all 0.5s ease;
+    transition: 0.5s ease-in-out;
 }
 
 
@@ -758,7 +854,7 @@
   	font-style: normal;
   	letter-spacing: 2px;
   	margin: 0;
-    transition: all 0.5s ease;
+    transition: 0.3s ease-in-out;
 }
 
 
@@ -769,7 +865,7 @@
 
 
 .ajslaq-divoptiq1 {
-	color: white;
+	color: #A9A9A9;
 	margin-left: 10px;
 }
 
@@ -823,11 +919,10 @@
 
 
 
-
 .div5-div2-div1234 {
 	display: flex;
-	width: 270px;
-	height: 210px;
+	width: 21%;
+	height: 80%;
 	border: 1px solid;
 	flex-direction: column;
 	align-items: center;
@@ -835,12 +930,18 @@
 }
 
 
+.div5-div2-div1234:hover {
+	cursor: pointer;
+	background: #d1d1d1;
+	transition: 0.5s ease-in-out;
+}
 
 
 .div5-div2-div1234-p1 {
 	font-family: "Syncopate", sans-serif;
   	font-weight: 400;
   	letter-spacing: 1px;
+	text-align: center;
 }
 
 
@@ -872,11 +973,7 @@
 
 
 
-.div5-div2-div1234:hover {
-	cursor: pointer;
-	background: #BEBEBE;
-	transition: all 0.5s ease;
-}
+
 
 
 
@@ -899,20 +996,14 @@
 	font-family: "Inter", sans-serif;
   	font-weight: 400;
   	letter-spacing: 1px;
+	text-align: center;
   }
-
-
-.div6-p2 {
-	font-family: "Inter", sans-serif;
-  	font-weight: 400;
-  	letter-spacing: 1px;
-}
 
 
 .a-link-recalls {
 	color: black;
 	text-decoration: underline;
-	transition: 0.2s all ease;
+	transition: 0.2s  ease-in-out;
 }
 
 
@@ -935,7 +1026,7 @@
 .div7 {
 	display: flex;
 	width: 100%;
-	height: 640px;
+	height: 620px;
 	border: 0px solid;
 	background: #FAFAFA;
 	justify-content: center;
@@ -956,41 +1047,70 @@
 
 .div7-div1-div1 {
 	display: flex;
-	width: 60%;
+	width: 70%;
 	height: 100%;
 	border: 0px solid;
 	flex-direction: column;
 	align-items: center;
+	transform: translateX(17px);
 }
 
 
 .cadillactextimg {
-	width: 300px;
-	height: 300px;
-	margin-top: -50px;
+	width: 420px;
+	height: 90px;
+	margin-top: 50px;
 	line-height: 1px;
 }
 
 
-.button-getupdates {
-	width: 250px;
+.a-button-cadillacworldwide {
+	display: flex;
+	width: 350px;
 	height: 50px;
+	border: 2px solid black;
+	color: black;
 	background: none;
-	margin-top: -110px;
 	font-size: 15px;
 	font-family: "Inter", sans-serif;
   	font-weight: 400;
   	letter-spacing: 2px;
-  	transition: all 0.5s ease;
+  	transition: 0.5s ease-in-out;
+	justify-content: center;
+	align-items: center;
 }
 
 
-.button-getupdates:hover {
+.a-button-cadillacworldwide:hover {
+	text-decoration: none;
 	background: black;
 	color: white;
 }
 
 
+.a-button-getupdates {
+	display: flex;
+	width: 350px;
+	height: 50px;
+	border: 2px solid black;
+	color: black;
+	background: none;
+	margin-top: 10px;
+	font-size: 15px;
+	font-family: "Inter", sans-serif;
+  	font-weight: 400;
+  	letter-spacing: 2px;
+  	transition: 0.5s ease-in-out;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.a-button-getupdates:hover {
+	text-decoration: none;
+	background: black;
+	color: white;
+}
 
 
 .searchdiv {
@@ -1001,7 +1121,7 @@
 	align-items: center;
 	justify-content: center;
 	gap: 10px;
-	margin-top: 20px;
+	margin-top: 10px;
 	cursor: pointer;
 }
 
@@ -1009,6 +1129,7 @@
 .font-search2 {
 	width: 30px;
 	height: 30px;
+	color: white;
 	background: url(https://cdn-icons-png.flaticon.com/128/5636/5636698.png);
 	background-size: 100% 100%;
 	margin: 0;
@@ -1042,7 +1163,7 @@
 	width: 100%;
 	height: 55%;
 	border: 0px solid;
-	margin-top: 100px;
+	margin-top: 120px;
 }
 
 
@@ -1086,7 +1207,7 @@
 	font-weight: 400;
 	letter-spacing: 1px;
 	display: inline-block;
-	transition: 0.4s ease;
+	transition: 0.4s ease-in-out;
 }
 
 
@@ -1104,9 +1225,9 @@
   	left: 0;
   	bottom: 0px;
   	width: 0;
-  	height: 1px;
+  	height: 2px;
   	background: black;
-  	transition: 0.4s ease;
+  	transition: 0.4s ease-in-out;
 }
 
 /* hover */
@@ -1156,10 +1277,10 @@
 }
 
 
-
 .font-sockayqer {
-	font-size: 25px;
-	transition: 0.3s all ease;
+	width: 40px;
+	height: 30px;
+	transition: 0.3s ease-in-out;
 	cursor: pointer;
 	display: inline-block;
 }
