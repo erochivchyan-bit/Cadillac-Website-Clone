@@ -1,0 +1,134 @@
+@media (min-width:1200px) {
+    .div-cadillac-logo {
+        height: 100%;
+    }
+
+    .media-div-menu-Ul {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:992px) and (max-width:1199px) {
+
+
+    .menu-Div {
+        height: 150px;
+    }
+
+
+    .div-cadillac-logo {
+        height: 60%;
+    }
+
+
+    .menu-Nkar2 {
+        margin-top: 30px;
+    }
+
+
+    .media-div-menu-Ul {
+        display: flex;
+    }
+
+
+    .menu-Li {
+        display: none;
+    }
+
+    .menu-Div1-2 {
+        flex-direction: column;
+    }
+
+    .media-menu-Ul {
+        display: flex;
+    }
+
+
+
+
+
+
+    .div2 {
+        height: 450px;
+    }
+
+
+
+
+
+
+
+
+
+
+    .div3 {
+        height: 360px;
+    }
+
+
+
+    .div3-div1 {
+        height: 360px;
+    }
+
+    .div3-div2 {
+        height: 360px;
+    }
+
+    .div3-div3 {
+        height: 360px;
+    }
+
+
+    .div3-div123-p1 {
+        font-size: 18px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    .divoptiq1 {
+        width: 77%;
+        height: 590px;
+    }
+
+    .divoptiq1-div1-p3 {
+        max-width: 91%;
+    }
+
+    .divoptiq1-div3-p2 {
+        max-width: 95%;
+    }
+
+
+}
